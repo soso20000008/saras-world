@@ -1,0 +1,30 @@
+.error-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f0f0f;
+  color: #ff4ecb;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.error-container h1 {
+  font-size: 6rem;
+  margin-bottom: 0.5rem;
+  animation: glitch 1.5s infinite;
+}
+
+.error-container p {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
+}
